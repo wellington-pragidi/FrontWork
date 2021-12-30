@@ -1,0 +1,75 @@
+table {
+	border-collapse: collapse;
+	width:100%;
+   background-color: #F5F5F5;
+}
+table, table tr, table td, table th {
+	border-style: solid;
+   border-color: #BBBBBB;
+   border-width: 0;
+   color: #777777
+}
+table tr th {
+	padding: 7px 9px 9px 9px;
+	font-weight: normal;
+	font-size: 1.120rem;
+	letter-spacing: 0.04rem;
+}
+table tr td {
+	padding:7px 6px 6.5px 10px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+table.datable, table.datable tr {
+	border-width: 1px;
+}
+table.datable th, table.datable td {
+	border-left-width: 1px;
+}
+
+table.frontier {
+	border-width: 1px;
+}
+
+table.horz tr {
+	border-top-width: 1px;
+}
+table.horz tr:last-child {
+	border-bottom-width: 1px;
+}
+
+table.vert td, table.vert th {
+	border-left-width: 1px;
+}
+table.vert td:last-child, table.vert th:last-child {
+	border-right-width: 1px;
+}
+
+table.striped tr:nth-child(odd) {
+    background-color: #E5E5E5;
+}
+
+table.chess tr th, table.chess tr th:first-child, table.chess tr th:last-child {
+   border-bottom-width: 1px;
+}
+table.chess tr:nth-child(even) td:nth-child(odd), 
+table.chess tr:nth-child(odd) td:nth-child(even) {
+    background-color: #E5E5E5;
+}
+
+table.hover tr {
+   transition: .3s;
+   cursor: default;
+}
+table.hover tr:hover td {
+   background-color: #DDDDDD;
+   transition: .3s;
+}
+
+table.inline th {
+	text-align: left;
+}
+table.inline td {
+	text-align: right;
+}

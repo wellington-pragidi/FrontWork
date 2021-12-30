@@ -1,0 +1,57 @@
+.accordion {
+    position: relative;
+    width: 100%;
+}
+.acc {
+	position: relative;
+    width: 100%;
+	margin-top: 10px
+}
+.acc_title {
+    position: relative;
+    text-align: left;
+    margin: 10px 0 0 0;
+    padding: 10px 35px 10px 15px;
+    cursor: pointer;
+    letter-spacing: 0.094rem;
+    font-size: 1.25rem;
+    color: #4F5040;
+    background-color: #E2E4E6;
+	border: 1px solid #FFFFFF;
+}
+.acc_content {
+    display: none;
+    position: relative;
+    padding: 10px;
+    font-size: 1.063rem;
+    color: #4F5040;
+    background-color: #E2E4E6;
+    border: 1px solid #FFFFFF;
+    border-top: none;
+}
+
+.acc_title::before, .acc_title::after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.11);
+    background-color: #FFFFFF;
+}
+.acc_title::before {
+	right: 12px;
+    top: calc(50% - 2px);
+    width: 20px;
+    height: 4px;
+}
+.acc_title::after {
+	right: 20px;
+    top: 12px;
+    top: calc(50% - 10px);
+    width: 4px;
+    height: 20px;
+    transition: transform .3s linear;
+}
+.expanded.acc_title::after, .opened.acc_title::after {
+	transform: rotate(90deg);
+    transition: transform .3s linear;
+}

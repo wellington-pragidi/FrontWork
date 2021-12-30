@@ -1,0 +1,43 @@
+input.ckb[type=checkbox] {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+input.ckb[type=checkbox] + label {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    box-shadow: 0 0 3px rgba(0, 71, 0, 0.40) inset;
+    border: 1px solid rgba(0, 71, 0, 0.40);
+}
+input.ckb[type=checkbox] + label::before {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    bottom: 0;
+    display: inline-block;
+}
+input.ckb[type=checkbox]:checked + label::before {
+    content: '\2714';
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+input.ckb[type=checkbox] + label span {
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    width: auto;
+    white-space: pre;
+    font-size: 0.95rem;
+    color: #666;
+}

@@ -1,0 +1,95 @@
+.alert {
+    position: relative;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 12px 15px;
+    border-radius: 3px;
+    font-size: 1.20rem;
+    text-shadow: 1px 1px rgba(255,255,255,0.35);
+}
+.alert p {
+    font-size: 1.20rem;
+}
+.alert a {
+    text-shadow: none;
+}
+.alert a:hover {
+    text-decoration: underline;
+}
+.alert strong {
+    color: #000000;
+}
+.alert mark, .alert code {
+    padding: 0 4px;
+}
+.alert mark {
+    position: relative;
+    top: .5px;
+    padding-top: -13px;
+    display: inline-block;
+    height: 23px;
+    font-size: 95%;
+    box-shadow: 0 -1px 2px 1px rgba(0,0,0,0.15) inset;
+}
+.alert code {
+    background-color: rgba(255,255,255,0.25);
+    font-weight: normal;
+}
+
+
+.alert.success {
+    background-color: #00A4B3;
+    background-image: linear-gradient(to bottom, #01EBFF 5%, #00A4B3 95%);
+    border: 2px solid #01EBFF;
+    border-image: linear-gradient(to bottom, #00A4B3, #01EBFF, #01EBFF, #007580);
+    border-image-slice: 2;
+    color: #00171A;
+}
+.alert.success a {
+    color: #00008b;
+    color: #00005C;
+    text-shadow: none;
+    text-shadow: 1px 1px #009EFF
+}
+.alert.success mark {
+    background-color: #00A4B3;
+    background-image: linear-gradient(to bottom, #0091a0, #009aa9, #00a4b3, #20aebd, #32b8c7);
+}
+
+.alert.warning {
+    background-color: #B3A400;
+    background-image: linear-gradient(to bottom, #E4D100 5%, #B3A400 95%);
+    border: 2px solid #C1B700;
+    border-image: linear-gradient(to bottom, #B3A400, #E4D100, #E4D100, #7E7300);
+    border-image-slice: 2;
+    color: #1A1700;
+}
+.alert.warning a {
+    color: yellow;
+    text-shadow: 1px 1px #FFFC85;
+    text-shadow: 1px 1px rgba(255,255,255,0.40);
+}
+.alert.warning mark {
+    background-image: linear-gradient(to bottom, );
+}
+
+.alert.error {
+    background-color: #B30000;
+    background-image: linear-gradient(to bottom, #FF0000 5%, #B30000 95%);
+    border: 2px solid #DE0C02;
+    border-image: linear-gradient(to bottom, #B30000, #FF0000, #FF0000, #800000);
+    border-image-slice: 2;
+    color: #1A0000;
+    text-shadow: 1px 1px rgba(255,255,255,0.25);
+}
+.alert.error a {
+    color: #550022;
+    text-shadow: 1px 1px #B95701;
+}
+.alert.error mark {
+    background-color: #B30000;
+    background-image: linear-gradient(to bottom, #9f0000, #a50000, #ac0000, #b30000, #ba1005, #c11b0a, #c82410);
+}
+.alert.error code {
+    background-color: rgba(255,255,255,0.17);
+}

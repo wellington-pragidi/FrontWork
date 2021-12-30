@@ -1,0 +1,42 @@
+.navtab ul {
+    overflow: hidden;
+    border: 1px solid #ddd;
+	border-bottom: none;
+    background-color: #eee;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0;
+    padding: 0 0
+}
+.navtab li {
+    border: none;
+	border-right: 1px solid #ddd;
+	background-color: #eee;
+    padding: 10px 14px;
+    font-size: 17px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.navtab li:hover, .navtab li.active {
+    background: linear-gradient(to bottom, #eee, #fff);
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-top: none;
+	animation: fadeEffect 1s;
+}
+.tabcontent.active {
+    display: block;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

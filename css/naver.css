@@ -1,0 +1,206 @@
+#navside {
+	position: fixed;
+	top: 80px;
+	left: 300px;
+	width: 0;
+	transition: .8s;
+	height: 100%;
+	max-height: 85vh;
+	overflow-y: auto;
+	z-index: 242;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0,0,0,0.40) rgba(0,0,0,0.30);
+	/*-*/
+	background-color: lightseagreen;
+	border-right: 1px solid lavender;
+}
+#navside::-webkit-scrollbar {
+    width: 8px;
+}
+#navside::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.30);
+}
+#navside::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.40);
+}
+
+#naver {
+	position: relative;
+	background-color: lightseagreen; /*-*/
+}
+#navertoogle.opened ~ #navside {
+	width: 230px;
+	transition: .8s;
+}
+/* btn open */
+#navertoogle {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	width: 33px;
+	height: 28px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 8892;
+	background-color: transparent;
+	border: none;
+}
+#navertoogle::before, #navertoogle::after {
+	position: absolute;
+	right: 0;
+	display: block;
+	content: ' ';
+}
+#navertoogle::before {
+	top: 0;
+	width: 33px;
+	height: 4.5px;
+	transition: all .3s ease;
+	background-color: lightseagreen;
+}
+#navertoogle::after {
+	top: 11px;
+	width: 34px;
+	height: 6px;
+	border-top: 5px solid lightseagreen;
+	border-bottom: 5px solid lightseagreen;
+}
+#navertoogle.opened {
+	overflow: visible;
+}
+#navertoogle.opened::after {
+	transition: all .3s ease;
+	top: 10px;
+	border: 0;
+	height: 7px;
+	width: 33px;
+	transform: rotate(45deg);
+	background-color: lightseagreen;
+}
+#navertoogle.opened::before {
+	top: 10px;
+	width: 34px;
+	height: 6px;
+	transform: rotate(-45deg);
+	background-color: lightseagreen;
+	border-color: lightseagreen;
+}
+
+#naver .listing, #naver .listing .is_sub {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style-type: none;
+}
+#naver .listing {
+	border-bottom: 1px solid rgba(255,255,255,0.30);
+}
+#naver .listing li {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	list-style-type: none;
+	display: block;
+}
+#naver .listing li.logotipo a {
+	position: relative;
+	border-top: none;
+	height: 45px;
+	width: 100%;
+	padding: 2px 11px;
+}
+#naver .logotipo img {
+	position: relative;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+#naver .listing li a, #naver .listing li a:focus {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 5px 11px 6px 12px;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	/*-*/
+	font-family: sans-serif;
+	color: lavender;
+	border-bottom: 1px solid rgba(0,0,0,0.20);
+	border-top: 1px solid rgba(255,255,255,0.30);
+}
+#naver .listing li:first-child a {
+	border-top: none;
+}
+#naver .listing li a:hover,
+#naver .listing li a.current, 
+#naver .has_sub.opened a.opendown {
+	background-color: rgba(255,255,255,0.15);
+	color: #FFFFFF;
+}
+#naver a.opendown::before, #naver a.opendown::after {
+    position: absolute;
+    content: " ";
+    background-color: #FFFFFF
+}
+#naver a.opendown::before {
+	right: 6px;
+    top: 15px;
+    width: 10px;
+    height: 2px;
+}
+#naver a.opendown::after {
+	right: 10px;
+    top: 11px;
+    width: 2px;
+    height: 10px;
+    transition: transform .4s linear;
+}
+#naver .has_sub.opened a.opendown::after {
+	transform: rotate(90deg);
+    transition: transform .4s linear;
+}
+
+#naver .is_sub {
+	width: 0;
+	height: 0;
+	transition: .8s;
+	overflow: hidden;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.15);
+}
+#naver .has_sub.opened .is_sub {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	opacity: 1;
+	transition: .8s;
+}
+#naver .is_sub li a, #naver .is_sub li a:focus {
+	padding: 4px 11px 5px 22px;
+	font-size: 14px;
+	font-weight: 300;
+	/*-*/
+	border-bottom: 1px solid rgba(0,0,0,0.20);
+	border-top: 1px solid rgba(255,255,255,0.30);
+}
+#naver .is_sub li a:hover, 
+#naver .is_sub li a.current {
+	background-color: rgba(255,255,255,0.15); /*-*/
+}
+
+@media(min-width: 48rem) { /* 768px */
+	#navside {
+		width: 230px;
+	}
+	#navertoogle {
+		display: none;
+	}
+	#naver .logotipo a {
+		height: 50px;
+	}
+}

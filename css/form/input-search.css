@@ -1,0 +1,110 @@
+.formit .srch {
+	position: relative;
+	width: 100%;
+	background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0 0 3px inset rgba(0, 0, 0, 0.30);
+    border-radius: 2px;
+    height: 41px;
+    overflow: hidden;
+}
+.formit .srch input[type=search] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.formit .srch input[type=submit], .formit .srch button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 38px;
+}
+
+.quest {
+	position: relative;
+	width: 100%;
+	height: 41px;
+	background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.30) inset;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.quest input[type=search], 
+.quest input[type=submit], .quest button {
+	position: absolute;
+	top: 0;
+    font-size: 1.1rem;
+    border: none;
+}
+.quest input[type=search] {
+	left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 8px 20px 8px 11px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-family: '', sans-serif;
+    color: #666666;
+}
+.quest input[type=submit], .quest button {
+	right: 0;
+	text-align: center;
+    padding: 8px 19px;
+    transition: .3s;
+    color: #858585;
+    background-color: #DDDDDD;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.90);
+}
+.quest input[type=submit]:hover, .quest button:hover {
+	filter: brightness(90%);
+}
+
+.bloom, .magnify, .lupa {
+	position: relative;
+	width: 100%;
+	height: 41px;
+	background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.30) inset;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.bloom input[type=search], .magnify input[type=search], .lupa input[type=search], 
+.bloom input[type=submit], .bloom button, 
+.magnify input[type=submit], .magnify button, 
+.lupa input[type=submit], .lupa button {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	background-color: transparent;
+    font-size: 1.1rem;
+    border: none;
+}
+.bloom input[type=search], .magnify input[type=search], .lupa input[type=search] {
+	left: 0;
+	width: 100%;
+    padding: 8px 48px 8px 11px;
+    letter-spacing: 1px;
+    font-family: '', sans-serif;
+    color: #666666;
+}
+.bloom input[type=submit], .bloom button, 
+.magnify input[type=submit], .magnify button, 
+.lupa input[type=submit], .lupa button {
+	right: 0;
+    padding: 4px 8px;
+    transition: .3s;
+    fill: #444444;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.50);
+}
+.bloom input[type=submit]:hover, .bloom button:hover, 
+.magnify input[type=submit]:hover, .magnify button:hover, 
+.lupa input[type=submit]:hover, .lupa button:hover {
+    transition: .3s;
+    fill: #858585;
+}
