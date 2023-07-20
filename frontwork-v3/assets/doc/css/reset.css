@@ -1,0 +1,176 @@
+body#frontwork {
+	position: relative;
+	margin: 0 0;
+	font-size: 1.063rem;
+	/*font-family: 'SegoeUI', ;*/
+	font-family: var(--font_system);
+	color: #616161;
+	background-color: #EAECEE;
+}
+
+h1.doc {
+	font-size: 2rem;
+	color: #374457;
+}
+h2.doc { font-size: 1.563rem; }
+h3.doc { font-size: 1.375rem; }
+h4.doc { font-size: 1.25rem; }
+h5.doc { font-size: 1.125rem; }
+h6.doc { font-size: 1rem; }
+h2.doc, h3.doc, h4.doc, h5.doc, h6.doc {
+	margin: 9px 0;
+	color: #374457;
+	font-weight: normal;
+}
+/* aq remove a margin-top da tag p quando h2-h6 esta antes de p */
+h2.doc ~ p, h3.doc ~ p, h4.doc ~ p, h5.doc ~ p, h6.doc ~ p {
+	margin-top: 0;
+}
+a.doc {
+	color: #8F3B3F;
+	text-decoration: none;
+	transition: .85s;
+}
+a.doc:hover, a.doc:focus, a.doc:active {
+	color: #B6AE1F;
+	transition: .85s;
+}
+p.doc {
+	margin: 10px 0;
+}
+article.doc p:first-child, 
+section.doc p:first-child, 
+div.doc p:first-child, 
+header.doc p:first-child, 
+footer.doc p:first-child, 
+aside.doc p:first-child,
+article.doc h2:first-child, 
+article.doc h3:first-child, 
+article.doc h4:first-child, 
+article.doc h5:first-child, 
+article.doc h6:first-child {
+	margin-top: 0;
+}
+article.doc p:last-child, 
+section.doc p:last-child, 
+div.doc p:last-child, 
+header.doc p:last-child, 
+footer.doc p:last-child, 
+aside.doc p:last-child,
+article.doc h2:last-child, 
+article.doc h3:last-child, 
+article.doc h4:last-child, 
+article.doc h5:last-child, 
+article.doc h6:last-child {
+	margin-bottom: 0;
+}
+ul.doc, ol.doc {
+	padding-left: 27px;
+	margin: 10px 0;
+	font-size: 1rem;
+}
+img.doc {
+	max-width: 100%; 
+	height: auto; 
+	font-size: 14px;
+}
+figure.doc {
+    background-color: #E7E7E7;
+    margin: 0.75rem;
+    padding: 5px;
+}
+figcaption.doc {
+	padding: 8px;
+	font-size: 1rem;
+}
+audio.doc, video.doc {
+    padding: 0 0;
+    width: 100%
+}
+audio.doc {
+	border-radius: 30px;
+}
+pre.doc {
+	white-space: pre-wrap;
+	margin: 10px 0;
+	font-size: 1rem;
+	font-family: 'Consola', monospace;
+}
+code.doc, .doc code {
+	display: inline-flex;
+	font-size: 98.5%;
+	/*min-height: 100%;*/
+	font-family: 'Consola', monospace;
+	background-color: rgba(0, 0, 0, 0.06);
+	padding: 0 1.5px 0.5px;
+	border-radius: 2px;
+	line-height: initial;
+}
+h2.doc code, h3.doc code, h4.doc code, h5.doc code, h6.doc code {
+	font-size: 95%;
+	color: #616161;
+	font-weight: normal;
+}
+blockquote.doc {
+	margin: 0.5rem 1.25rem 0.5rem 1.25rem;
+	padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+	font-size: 1.35rem;
+	text-indent: 1.5rem;
+	letter-spacing: 0.06rem;
+	line-height: 1.3;
+	border-radius: 32px 4px 32px 4px;
+	transform: skewX(-10deg);
+	color: #616161;
+	border-right: 5px solid #616161;
+	border-left: 5px solid #616161;
+}
+q.doc::before, q.doc::after {
+	font-size: 1.25rem;
+	font-style: italic;
+}
+q.doc::before {
+	margin-right: 7px;
+}
+cite.doc {
+	position: relative;
+	display: inline-block;
+	font-size: 0.9rem;
+	margin-top: 10px;
+	font-style: italic;
+}
+cite.doc::before {
+	position: relative;
+	content: "– ";
+}
+mark.doc { 
+	padding: 0 2px;
+	border-radius: 2px;
+}
+/*strong { font-weight: bold; }*/
+hr.doc {
+	margin: 15px 0;
+	height: 1px;
+	border: none;
+	background-color: transparent;
+	background-image: linear-gradient(to right, transparent, #374457, transparent);
+}
+hr.doc.add {
+    margin: 12px 0;
+    border-right: none;
+    border-left: none;
+    border-radius: 1px;
+    clear: both;
+    height: 3px;
+    border-top: 1px solid #D4D4D4;
+    background-color: #EEE;
+    border-bottom: 1px solid #FFFFFF;
+    background-image: none;
+}
+button.doc, input[type=button].doc, input[type=reset].doc, input[type=submit].doc {
+	cursor: pointer;
+}
+#frontwork::selection { 
+	text-shadow: none; 
+	background-color: #2200FF; 
+	color: #FFFFFF; 
+}

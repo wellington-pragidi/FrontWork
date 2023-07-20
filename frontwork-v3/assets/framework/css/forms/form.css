@@ -1,0 +1,348 @@
+.formit {
+	position: relative;
+}
+.formit input[type=text], input.xl[type=text],  
+.formit textarea, 
+.formit select, 
+.formit input[type=email], 
+.formit input[type=password], 
+.formit input[type=search], 
+.formit input[type=url], 
+.formit input[type=number], 
+.formit input[type=tel], 
+.formit input[type=time], .formit input[type=date], .formit input[type=datetime-local], 
+.formit input[disabled], .formit input[readonly] {
+	width: 100%;
+    padding: 0.507rem 12px;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    font-family: var(--font_prime);
+    letter-spacing: 0.031rem;
+    color: var(--input_color);
+    background-color: var(--bg_input);
+    border: 2px solid var(--input_border);
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.40) inset;
+    border-radius: 2px;
+    box-sizing: inherit;
+}
+.formit table input, .formit table textarea, .formit table select {
+    margin-bottom: 0 !important;
+}
+.formit input[type=number] {
+    text-align: center;
+}
+.formit textarea {
+	height: 15vh;
+	resize: vertical;
+}
+.formit input::placeholder, .formit textarea::placeholder {
+    font-size: 1.1rem;
+    font-family: var(--font_prime);
+    letter-spacing: 0.031rem;
+    color: var(--input_color);
+}
+.formit input[disabled], .formit input[readonly] {
+    cursor: not-allowed;
+}
+.formit label {
+	font-size: 0.9rem;
+	margin-left: 3px;
+	color: var(--input_color);
+	cursor: pointer;
+}
+/** ----------------------------------
+ * .md itens de formulario tamanho medio 
+ *                                   */
+.formit.md input[type=text], 
+.formit.md textarea, 
+.formit.md select, 
+.formit.md input[type=email], 
+.formit.md input[type=password], 
+.formit.md input[type=search], 
+.formit.md input[type=url], 
+.formit.md input[type=number], 
+.formit.md input[type=tel], 
+.formit.md input[type=time], .formit.md input[type=date], .formit.md input[type=datetime-local], 
+.formit.md input[disabled], .formit.md input[readonly],
+.formit input[type=text].md, 
+.formit textarea.md, 
+.formit select.md, 
+.formit input[type=email].md, 
+.formit input[type=password].md, 
+.formit input[type=search].md, 
+.formit input[type=url].md, 
+.formit input[type=number].md, 
+.formit input[type=tel].md, 
+.formit input[type=time].md, .formit input[type=date].md, .formit input[type=datetime-local].md, 
+.formit input[disabled].md, .formit input[readonly].md {
+    padding: 5px 9px;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    box-shadow: 0 0 2px 1px inset rgba(0, 0, 0, 0.30);
+    border-radius: 2px;
+}
+.formit.md textarea, .formit textarea.md {
+    height: 9vh;
+}
+.formit.md label, .formit label.md {
+    font-size: 0.85rem;
+}
+.formit.md input::placeholder, .formit.md input::placeholder, 
+.formit.md textarea::placeholder, .formit textarea.md::placeholder {
+    font-size: 0.95rem;
+}
+/** ----------------------------------
+ * .sm itens de formulario menores 
+ *                                   */
+.formit.sm input[type=text], 
+.formit.sm textarea, 
+.formit.sm select, 
+.formit.sm input[type=email], 
+.formit.sm input[type=password], 
+.formit.sm input[type=search], 
+.formit.sm input[type=url], 
+.formit.sm input[type=number], 
+.formit.sm input[type=tel], 
+.formit.sm input[type=time], .formit.sm input[type=date], .formit.sm input[type=datetime-local], 
+.formit.sm input[disabled], .formit.sm input[readonly],
+.formit input[type=text].sm, 
+.formit textarea.sm, 
+.formit select.sm, 
+.formit input[type=email].sm, 
+.formit input[type=password].sm, 
+.formit input[type=search].sm, 
+.formit input[type=url].sm, 
+.formit input[type=number].sm, 
+.formit input[type=tel].sm, 
+.formit input[type=time].sm, .formit input[type=date].sm, .formit input[type=datetime-local].sm, 
+.formit input[disabled].sm, .formit input[readonly].sm {
+    padding: 4px 7.5px;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    box-shadow: 0 0 2px inset rgba(0, 0, 0, 0.24);
+    border-radius: 1px;
+}
+.formit.sm textarea, .formit textarea.sm {
+	padding: 4px 7px;
+	height: 9vh;
+}
+.formit.sm label, .formit label.sm {
+	font-size: 0.65rem;
+}
+.formit.sm input::placeholder, .formit.sm input::placeholder, 
+.formit.sm textarea::placeholder, .formit textarea.sm::placeholder {
+	font-size: 0.8rem;
+}
+
+/** ----------------------------------
+ * .lg itens de formulario maiores 
+ *                                   */
+.formit.lg input[type=text], 
+.formit.lg textarea, 
+.formit.lg select, 
+.formit.lg input[type=email], 
+.formit.lg input[type=password], 
+.formit.lg input[type=search], 
+.formit.lg input[type=url], 
+.formit.lg input[type=number], 
+.formit.lg input[type=tel], 
+.formit.lg input[type=time], .formit.lg input[type=date], .formit.lg input[type=datetime-local], 
+.formit.lg input[disabled], .formit.lg input[readonly],
+
+.formit input[type=text].lg, 
+.formit textarea.lg, 
+.formit select.lg, 
+.formit input[type=email].lg, 
+.formit input[type=password].lg, 
+.formit input[type=search].lg, 
+.formit input[type=url].lg, 
+.formit input[type=number].lg, 
+.formit input[type=tel].lg, 
+.formit input[type=time].lg, .formit input[type=date].lg, .formit input[type=datetime-local].lg, 
+.formit input[disabled].lg, .formit input[readonly].lg {
+    padding: 11px 15px;
+    font-size: 1.400rem;
+    margin: 3px 0 5px;
+    border-radius: 3px;
+}
+.formit.lg textarea, .formit textarea.lg {
+	height: 20vh;
+}
+.formit.lg label, .formit label.lg {
+	font-size: 1.20rem;
+	margin-left: 3px;
+}
+.formit.lg input::placeholder, .formit.lg input::placeholder, 
+.formit.lg textarea::placeholder, .formit textarea.lg::placeholder {
+	font-size: 1.400rem;
+}
+
+.formit.hlg textarea::placeholder, .formit textarea.hlg, .formit textarea.hlg::placeholder {
+    height: 25vh;
+    font-size: 1.15rem;
+}
+
+input.xl[type=text] {
+	padding: 12px 17px;
+    font-size: 1.625rem;
+}
+input.xl[type=text]::placeholder {
+	font-size: 1.625rem;
+}
+
+input.false {
+	font-size: 1.25rem;
+	font-family: var(--font_prime);
+	border: none !important;
+    box-shadow: none !important;
+    padding: 0 0 !important;
+    background-color: transparent !important;
+}
+
+
+/** -------------------------------
+ * Checkbox 
+ * 
+ *          */
+input.ckb[type=checkbox] {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+input.ckb[type=checkbox] + label {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px var(--black_rgba_030) inset;
+    border: 1px solid var(--input_border);
+}
+input.ckb[type=checkbox] + label::before {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    bottom: 0;
+    display: inline-block;
+}
+input.ckb[type=checkbox]:checked + label::before {
+    content: '\2714';
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--blue);
+}
+input.ckb[type=checkbox] + label span {
+    position: relative;
+    padding-left: 23.5px;
+    cursor: pointer;
+    width: auto;
+    white-space: pre;
+    font-size: 0.95rem;
+    color: var(--text_color_in_white);
+}
+
+/** -------------------------------
+ * Radio 
+ * 
+ *      */
+input.rad[type=radio] {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+input.rad[type=radio] + label {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 17px;
+    height: 17px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 2px var(--blue_light);
+    background-image: radial-gradient(var(--purple_light), var(--blue_light));
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .2s;
+}
+input.rad[type=radio]:checked + label {
+    background-size: 100% 100%;
+    transition: .2s;
+}
+input.rad[type=radio]:checked + label::before {
+    background-color: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 0 3px 1.5px rgba(255, 255, 255, 1);
+}
+input.rad[type=radio] + label span {
+    position: relative;
+    top: -3px;
+    padding-left: 27px;
+    cursor: pointer;
+    width: auto;
+    white-space: pre;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/** -------------------------------
+ * form input search
+ * 
+ *      */
+.quest {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.30) inset;
+    border-radius: 2px;
+    overflow: hidden;
+    
+    margin: 2px 0 8px auto;
+    width: 300px;
+    max-width: 98%;
+}
+.quest input[type=search], 
+.quest input[type=submit], .quest button {
+    position: absolute;
+    top: 0;
+    font-size: 0.96rem;
+    font-family: var(--font_prime);
+    border: none;
+}
+.quest input[type=search] {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 7px 80px 7px 9px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-family: '', sans-serif;
+    color: #666666;
+}
+.quest input[type=submit], .quest button {
+    right: 0;
+    text-align: center;
+    font-size: 1.025rem;
+    padding: 5px 12px;
+    transition: .3s;
+    color: #858585;
+    background-color: #DDDDDD;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.90);
+}
+.quest input[type=submit]:hover, .quest button:hover {
+    filter: brightness(90%);
+}

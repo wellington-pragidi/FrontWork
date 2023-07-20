@@ -1,0 +1,67 @@
+.grid_float {
+    position: relative;
+    display: block;
+    clear: both;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+.grid_float::before, .grid_float::after {
+    position: relative;
+    display: table;
+    content: ' ';
+    clear: both;
+}
+[class^="cnf_"], [class*=" cnf_"] {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    float: left;
+}
+
+.cnf_1 { 
+    flex: 0 0 8.333333%; 
+    width: 8.33333% 
+}
+.cnf_2 { 
+    flex: 0 0 16.666667%; 
+    width: 16.666667% 
+}
+.cnf_3 { 
+    flex: 0 0 25%; 
+    width: 25% 
+}
+.cnf_4 { 
+    flex: 0 0 33.333333%; 
+    width: 33.33333% 
+}
+.cnf_5 { 
+    flex: 0 0 41.666667%; 
+    width: 41.66666% 
+}
+.cnf_6 { 
+    flex: 0 0 50%; 
+    width: 50% 
+}
+.cnf_7 { 
+    flex: 0 0 58.333333%; 
+    width: 58.33333% 
+}
+.cnf_8 { 
+    flex: 0 0 66.666667%; 
+    width: 66.66666% 
+}
+.cnf_9 { 
+    flex: 0 0 75%; 
+    width: 75% 
+}
+.cnf_10 { 
+    flex: 0 0 83.333333%; 
+    width: 83.33333% 
+}
+.cnf_11 { 
+    flex: 0 0 91.666667%; 
+    width: 91.66666% 
+}
+.cnf_12 { 
+    flex: 0 0 100%; 
+    width: 100% 
+}

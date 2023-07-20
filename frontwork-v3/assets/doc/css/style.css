@@ -1,0 +1,196 @@
+:root {
+    --red: #8F3B3F;
+    --green: #00BE88;
+    --blue: #006B89;/* azul claro */
+    --yellow: #B6AE1F;
+    --orange: #DE7E29;
+    --pink: #C6537A;
+    --brown: #4F5040;
+    --light: #F1F1F1;
+    --gray: #858585;
+    --dark: #202335;
+    --info: #668D92;
+}
+.fw_red { color: var(--red); }
+.fw_green { color: var(--green); }
+.fw_blue { color: var(--blue); }
+.fw_yellow { color: var(--yellow); }
+.fw_orange { color: var(--orange); }
+.fw_pink { color: var(--pink); }
+.fw_brown { color: var(--brown); }
+.fw_gray { color: var(--gray); }
+.fw_dark { color: var(--gray); }
+.txt_info, .fwtxt_info { color: var(--info) }
+.txtstd { color: #616161; }
+
+/*.ft_extra_light { 
+    font-family: var(--font_prime_light);
+    font-weight: lighter !important 
+}*/
+
+.fw_popup {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(238, 238, 238, 0.85);
+    z-index: 8888;
+}
+.fw_popup_content {
+    position: absolute;
+    inset: 0;
+    width: calc(100% - 330px);
+    min-height: 25vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: auto auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.60);
+    border-radius: 3px;
+    z-index: 8887;
+}
+.fw_popup_content .fws_syntax {
+    margin: 0 0;
+}
+.fw_overlay_popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.fw_btn, a.fw_btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 1.05rem;
+    transition: background-color .3s, color .3s;
+    border-radius: 5px;
+    font-family: 'Baloo', Arial, Helvetica, Tahoma, sans-serif;
+    color: #E2E4E6;
+    background-color: #374457;
+    border: 1px solid #B6AE1F;
+    box-shadow: 0 3px 2px -1px rgba(0, 0, 0, 0.70);
+    text-shadow: 1px 1px transparent;
+    font-weight: bold;
+}
+.fw_btn:hover, .fw_btn:focus, .fw_btn:active, a.fw_btn:hover, a.fw_btn:focus, a.fw_btn:active {
+    text-decoration: none;
+    transition: background-color .3s, color .3s;
+    color: #374457;
+    background-color: #B6AE1F;
+    border: 1px solid #374457;
+    box-shadow: 0 4px 5px -4px rgba(0, 0, 0, 0.85);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.40);
+}
+.fw_btn:focus, .fw_btn:active {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.22) inset, 2px 0 1px rgba(0, 0, 0, 0.22) inset, -2px 0 1px rgba(0, 0, 0, 0.22) inset;
+}
+.fw_btn.center {
+    display: block;
+    margin: auto;
+}
+.fw_btn.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+a.fw_btn.center, a.fw_btn.right {
+    display: table;
+}
+
+.fw_example {
+    border: 3px solid #D9E2E4;
+    margin: 5px 0;
+    padding: 10px;
+}
+.fw_alert {
+    margin: 10px 0 12.5px 0;
+    padding: 5px 0 5px 7px !important;
+    border-left: 4px solid;
+    border-radius: 3px;
+    font-family: 'Baloo', sans-serif;
+    letter-spacing: 0.010rem;
+    font-size: 19px;
+}
+.fw_alert code {
+    font-size: 91.5%;
+}
+.fw_alert.warn {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+.fw_alert.danger {
+    color: var(--red);
+    border-color: var(--red);
+}
+.fw_alert.info {
+    color: var(--info);
+    border-color: var(--info);
+}
+.fw_alert.atention {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+code.hl {
+    background-color: transparent;
+    font-size: 100%;
+    color: var(--orange);
+}
+
+.bg0 { background-color: transparent; }
+
+.docftlight {
+    font-family: 'SegoeUI_Light', Tahoma, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#fs_content div {
+    margin: 7px 0;
+    padding: 7px 0 7px 5px;
+    border-bottom: 1px dotted var(--color);
+}
+
+.p {
+    margin: 10px 0 !important;
+    font-weight: normal !important;
+    font-size: 1.1rem !important;
+}
+
+/** 
+ * para elementos de paginas especificas 
+ * */
+#typography-quotes #blockquote .fws_syntax {
+    margin-top: 45px;
+}
+
+/* -------------------------------------------------
+    font-size
+*/
+.ft9 { font-size: 0.563rem !important }
+.ft10 { font-size: 0.625rem !important }
+.ft11 { font-size: 0.688rem !important }
+.ft12 { font-size: 0.75rem !important }
+.ft13 { font-size: 0.813rem !important }
+.ft14 { font-size: 0.875rem !important }
+.ft15 { font-size: 0.938rem !important }
+.ft16 { font-size: 1rem !important }
+.ft17 { font-size: 1.063rem !important }
+.ft18 { font-size: 1.125rem !important }
+.ft19 { font-size: 1.188rem !important }
+.ft20 { font-size: 1.25rem !important }
+.ft22 { font-size: 1.313rem !important }
+.ft24 { font-size: 1.5rem !important }
+.ft26 { font-size: 1.625rem !important }
+.ft28 { font-size: 1.75rem !important }
+.ft30 { font-size: 1.875rem !important }
+.ft34 { font-size: 2.125rem !important }
+.ft38 { font-size: 2.375rem !important }
+.ft44 { font-size: 2.75rem !important }
+.ft48 { font-size: 3rem !important }
+.ft52 { font-size: 3.25rem !important }

@@ -1,0 +1,141 @@
+section#section {
+	position: relative;
+	width: 100%;
+	clear: both;
+}
+
+aside#aside {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 100%;
+	background-color: #E5E5E5;
+	border-right: 1px solid #CCCCCC;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scrollbar-width: thin;
+	scrollbar-color: #374457 #E5E5E5;
+	z-index: 245;
+}
+nav#navhash {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 170px;
+	height: 100%;
+	background-color: #EEEEEE;
+	/*border-left: 1px solid #DDDDDD;*/
+	z-index: 244;
+}
+
+main#main {
+	position: relative;
+    width: calc(100% - 330px);
+    margin-left: 180px;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+
+header#header {
+	padding: 12px 20px 0 20px;
+}
+#master_title {
+	margin-top: 0;
+	font-size: 40px;
+	font-family: 'Baloo', sans-serif;
+	color: #374457;
+	line-height: 1.2;
+}
+
+article.article {
+	padding: 0 20px;
+}
+/* div#doc_id */.doc {}
+.title, .ligth_title, .sub_title {
+	margin: 10px 0 15px;
+	font-size: 31px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #374457;
+	line-height: 1.4;
+    letter-spacing: 0.010rem;
+}
+.sub_title, .ligth_title {
+	font-family: 'Baloo';
+	font-weight: lighter;
+	font-size: 24px;
+}
+.sub_title {
+	font-size: 28px;
+}
+
+
+/** rodape */
+footer#footer {
+	position: relative;
+	width: 100%;
+	min-height: 45px;
+	color: #FEFEFE;
+	background-color: #374457;
+	font-size: 15px;
+	font-weight: 300;
+	clear: both;
+	padding-bottom: 8px;
+	margin-top: 45px;
+	font-family: 'Ubuntu', sans-serif;
+	z-index: 243;
+}
+footer#footer p.p {
+	color: #FEFEFE;
+	font-family: 'Ubuntu', sans-serif;
+}
+footer#footer::before, footer#footer::after {
+	content: " " !important;
+	display: table !important;
+	clear: both !important;
+}
+footer#footer div {
+	width: calc(100% - 200px);
+    margin-left: 200px;
+    padding: 15px;
+    color: #FEFEFE;
+}
+footer#footer a, footer#footer a {
+	color: #B6AE1F;
+}
+footer#footer a:hover, footer#footer a:focus {
+	color: #F3CD87;
+	text-decoration: underline;
+}
+footer#footer div p.p:nth-child(1) { 
+	width: 42%;
+	padding: 0 10px;
+	float: left;
+}
+footer#footer div p.p:nth-child(2) {
+	position: relative;
+	bottom: -40px;
+	width: 42%;
+	padding: 0 10px;
+	float: left;
+}
+footer#footer div p.p:nth-child(1) span {
+    display: block;
+}
+footer#footer div p.p:nth-child(1) br { 
+	margin: 5px 0;
+}
+footer#footer div p.p:nth-child(2) img {
+	margin: 0 0 -2px 4px;
+}
+.link_webship {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 15px;
+    width: 80px;
+    height: 25px;
+    opacity: 1;
+    transition: 1s;
+    z-index: 245;
+}

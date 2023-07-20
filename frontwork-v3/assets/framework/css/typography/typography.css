@@ -1,0 +1,25 @@
+/* -------------------------------------------------
+    text-align
+*/
+.txt_left { text-align: left !important }
+.txt_center { text-align: center !important }
+.txt_right { text-align: right !important }
+.txt_full { text-align: justify !important }
+
+/* -------------------------------------------------
+    font-weight
+*/
+.ft_light { font-weight: lighter !important }
+.ft_normal { font-weight: normal !important }
+.ft_bold { font-weight: bold !important }
+
+/* -------------------------------------------------
+    text-overflow
+*/
+/**  */
+.text_overflow, .text_nowrap, .text_ellipsis {
+    display: block;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}

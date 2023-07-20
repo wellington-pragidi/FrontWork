@@ -1,0 +1,26 @@
+.formit textarea.auto_rise, .auto_rise {
+	height: 16vh;
+	min-height: 16vh;
+	resize: none;
+	overflow: hidden;
+	padding-bottom: 1px;
+}
+
+textarea.textarea_img {
+    background-image:url(//picsum.photos/id/222/640/150);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #000000;
+    text-shadow: 1px 1px 2px #FFFFFF;
+}
+textarea.textarea_img.inverse {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #000000;
+}
+textarea.textarea_img__non_focus {
+    background-image:url(//picsum.photos/id/227/640/150);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

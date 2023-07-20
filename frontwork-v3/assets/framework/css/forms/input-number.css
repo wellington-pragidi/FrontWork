@@ -1,0 +1,129 @@
+/**-----------------------------------
+ *              Geral
+ *                                   */
+.number {
+    position: relative;
+    height: 43px;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.number input[type=number] {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: none;
+}
+.more, .minus {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    width: 26px;
+    height: 100%;
+    text-align: center;
+    font-size: 1.570rem;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    font-weight: lighter;
+    color: #555;
+    background-color: #FFF;
+    z-index: 11;
+}
+.more:hover, .minus:hover {
+    color: #FFF;
+    background-color: #DDD;
+}
+.more em, .minus em {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+}
+
+/**-----------------------------------
+ *       opr_aside - arw_aside
+ *                                   */
+.opr_aside, .arw_aside {
+    width: 100px;
+}
+.opr_aside input[type=number], .arw_aside input[type=number] {
+    padding: 0 0;
+}
+.opr_aside .more, .opr_aside .minus,
+.arw_aside .more, .arw_aside .minus {
+    right: 0;
+    height: 21px;
+    border-left: 1px solid #C5C5C5;
+}
+.opr_aside .more, .arw_aside .more {
+    top: 0;
+    border-bottom: 1px solid #C5C5C5;
+}
+.opr_aside .minus, .arw_aside .minus {
+    bottom: 0;
+}
+.opr_aside .more em, .opr_aside .minus em {
+    top: -5px;
+}
+/**-----------------------------------
+ *      opr_sides - arw_sides
+ *                                   */
+.opr_sides, .arw_sides {
+    width: 120px;
+}
+.opr_sides input[type=number], .arw_sides input[type=number] {
+    padding: 0 0 0 19px;
+}
+
+.opr_sides .more, .opr_sides .minus,
+.arw_sides .more, .arw_sides .minus {
+    top: 0;
+    height: 100%;
+}
+.opr_sides .more, .arw_sides .more {
+    right: 0;
+    border-left: 1px solid #C5C5C5;
+}
+.opr_sides .minus, .arw_sides .minus {
+    left: 0;
+    border-right: 1px solid #C5C5C5;
+}
+.opr_sides .more em, .opr_sides .minus em {
+    top: 5px;
+}
+/**-----------------------------------
+ *             arw_*
+ *                                   */
+.arw_aside .more em, .arw_aside .minus em,
+.arw_sides .more em, .arw_sides .minus em {
+    display: none;
+}
+.arw_aside .more::before, .arw_aside .minus::before,
+.arw_sides .more::before, .arw_sides .minus::before {
+    position: absolute;
+    display: block;
+    left: 8px;
+    font-size: 1rem;
+    transform: scaleX(1.5);
+}
+.arw_aside .more::before, .arw_sides .more::before {
+    content: '\02C4';
+}
+.arw_aside .minus::before, .arw_sides .minus::before {
+    content: '\02C5';
+} 
+.arw_aside .more::before {
+    top: 1px;
+}
+.arw_aside .minus::before {
+    top: 2px;
+}
+.arw_sides .more::before, .arw_sides .minus::before {
+    top: 11px;
+}

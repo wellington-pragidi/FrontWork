@@ -1,0 +1,72 @@
+.accordion {
+    position: relative;
+    width: 100%;
+}
+.acc {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+.acc_title {
+    position: relative;
+    text-align: left;
+    margin: 0 0;
+    padding: 10px 35px 10px 15px;
+    cursor: pointer;
+    letter-spacing: 0.094rem;
+    font-size: 1.25rem;
+    color: #4F5040;
+    background-color: #e0e0e0;
+}
+.acc_panel {
+    position: relative;
+    font-size: 1.063rem;
+    color: #4F5040;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.45s ease-out;
+}
+.acc_panel.expanded {
+    max-height: 150vh;
+    overflow: visible;
+    visibility: visible;
+    transition: all 0.65s ease-in;
+}
+.acc_content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+.acc_title::before, .acc_title::after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.11);
+    background-color: #999;
+}
+.acc_title::before {
+    right: 12px;
+    top: calc(50% - 2px);
+    width: 20px;
+    height: 4px;
+}
+.acc_title::after {
+    right: 20px;
+    top: 12px;
+    top: calc(50% - 10px);
+    width: 4px;
+    height: 20px;
+    transition: transform .3s linear;
+}
+.acc_title.active::after, /*.accordion .firstopen:first-child .acc_title::after*/ {
+    transform: rotate(90deg);
+    transition: transform .3s linear;
+}
+
+
+
+/*.accordion .firstopen:first-child .acc_panel {
+    max-height: 150vh;
+    overflow: visible;
+    visibility: visible;
+    transition: all 0.65s ease-in;
+}*/

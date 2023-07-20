@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Icon';
+    src: url("<?php _urli('assets/doc/fonts/ico.eot?77793596') ?>");
+    src: url("<?php _urli('assets/doc/fonts/ico.eot?77793596#iefix') ?>") format('embedded-opentype'),
+         url("<?php _urli('assets/doc/fonts/ico.woff2?77793596') ?>") format('woff2'),
+         url("<?php _urli('assets/doc/fonts/ico.woff?77793596') ?>") format('woff'),
+         url("<?php _urli('assets/doc/fonts/ico.ttf?77793596') ?>") format('truetype'),
+         url("<?php _urli('assets/doc/fonts/ico.svg?77793596#ico') ?>") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Dundalk';
+    src: url("<?php _urli('assets/doc/fonts/Dundalk.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SegoeUI';
+    src: url("<?php _urli('assets/doc/fonts/SegoeUI.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SegoeUI_Light';
+    src: url("<?php _urli('assets/doc/fonts/SegoeUI_Light.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Baloo';
+    src: url("<?php _urli('assets/doc/fonts/Baloo.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("<?php _urli('assets/doc/fonts/Ubuntu.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Consola';
+    src: url("<?php _urli('assets/doc/fonts/Consola.ttf') ?>") format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Blanco';
+    src: url("<?php _urli('assets/doc/fonts/Blanco.woff2') ?>") format('woff2');
+    font-display: swap;
+}

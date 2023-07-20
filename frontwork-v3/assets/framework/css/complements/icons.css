@@ -1,0 +1,12 @@
+[class^="ico_"]::before, [class*=" ico_"]::before {
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+}
+.ico_close::before { content: '\00D7'; }
+.ico_ldquo::before { content: '\201C'; } /* aspas duplas direitas - right_double_quote */
+.ico_rdquo::before { content: '\201D'; } /* aspas duplas esquerda - left_double_quote */
+
+

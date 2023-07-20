@@ -1,0 +1,67 @@
+[class^="ico_"]::before, [class*=" ico_"]::before {
+    font-family: "Icons";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.ico_underline::before { content: '\e800'; }
+.ico_image::before { content: '\e801'; }
+.ico_embed::before { content: '\e802'; }
+.ico_video::before { content: '\e803'; }
+.ico_quote::before { content: '\e804'; }
+.ico_left::before { content: '\e805'; }
+.ico_center::before { content: '\e806'; }
+.ico_right::before { content: '\e807'; }
+.ico_justify::before { content: '\e808'; }
+.ico_bold::before { content: '\e80a'; }
+.ico_code::before { content: '\e80b'; }
+.ico_srcode::before { content: '\eeea'; }
+.ico_color::before { content: '\e80c'; }
+.ico_strike::before { content: '\e80d'; }
+.ico_italic::before { content: '\e80e'; }
+.ico_unlink::before { content: '\e80f'; font-weight: bold; }
+.ico_unorderlist::before { content: '\e810'; }
+.ico_orderlist::before { content: '\e811'; }
+.ico_link::before { content: '\e812'; }
+.ico_header::before { content: '\e813'; }
+.ico_caret::before { content: '\e814'; }
+.ico_fullscreen::before { content: '\e816'; }
+.ico_lorem::before { content: '\e81e'; font-weight: lighter !important; }
+.ico_help::before { content: '\e820'; }
+.ico_rule::before { content: '\e821'; }
+.ico_grid::before { content: '\e824'; }
+.ico_fontsize::before { content: '\ea61'; }
+
+.ico_calendar::before { content: '\eecd'; }
+.ico_ui-calendar::before { content: '\ec45'; }
+.ico_cart-alt::before { content: '\eed1'; }
+.ico_close::before { content: '\eee4'; }
+.ico_dashboard::before { content: '\eefa'; }
+.ico_trash::before { content: '\ec53'; }
+.ico_download-alt::before { content: '\ef07'; }
+.ico_envelope::before { content: '\ef14'; }
+.ico_eye-blocked::before { content: '\ef22'; }
+.ico_eye::before { content: '\ef24'; }
+.ico_folder-open::before { content: '\ef35'; }
+.ico_folder::before { content: '\ef36'; }
+.ico_ui-folder::before { content: '\ec5b'; }
+.ico_shopping-cart::before { content: '\efe7'; }
+
+.ico_spinner-a::before { content: '\eff4'; }
+.ico_spinner-b::before { content: '\eff5'; }
+.ico_spinner-c::before { content: '\eff7'; }
+.ico_spinner-d::before { content: '\eff9'; }
+.ico_spinner::before { content: '\effa'; }
+.ico_spinner-a, .ico_spinner-b, .ico_spinner-c, .ico_spinner-d, .ico_spinner {
+    display: inline-block;
+    animation: loading 2s infinite linear;
+}
+.ico_spinner, .ico_spinner-d {
+    animation: loading 2s infinite steps(12, start);
+}
+@keyframes loading {
+    from  { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

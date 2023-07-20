@@ -1,0 +1,123 @@
+blockquote.bkq_1 {
+    margin: 0.5rem 0.25rem;
+    border-radius: 32px 4px 32px 4px;
+    transform: skewX(-4deg);
+    border-right: 5px solid #CCCCCC;
+    border-left: 5px solid #CCCCCC;
+}
+
+blockquote.bkq_2 {
+    position: relative;
+    text-indent: 1.8rem;
+    border-left: 10px solid #CCCCCC;
+}
+blockquote.bkq_2 em {
+    position: absolute;
+    top: -10px;
+    left: -24px;
+    display: inline-block;
+    font-size: 3.75rem;
+    color: #CCCCCC;
+    text-shadow: 2px 0 1px #BBB, 4px 0 2px rgba(0, 0, 0, 0.35);
+}
+
+.bkq_3 {
+    position: relative;
+    margin: 8px 10px 8px 10px;
+    padding: 8px 0 8px 0;
+    border-left: none;
+    border-radius: 0;
+    z-index: 1;
+}
+.bkq_3::before, .bkq_3::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 30px;
+    height: 100%;
+    z-index: -1;
+    background-color: #CCC;
+    transform: skewX(-10deg);
+}
+.bkq_3::before {
+    left: 40px;
+}
+.bkq_3::after {
+    left: 100px;
+}
+
+.bkq_4 {
+    position: relative;
+    padding: 2rem 1.2rem;
+    border: 1px solid #565500;
+    border-radius: 15px;
+}
+.bkq_4 p {
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #3A3A24;
+}
+.bkq_4 em {
+    font-size: 1.3rem;
+}
+.bkq_4 cite {
+    display: block;
+    width: auto;
+    position: absolute;
+    bottom: -13px;
+    font-size: 1.1rem;
+    margin: 0 auto;    
+    background-color: #EEEEEE;
+    padding: 2px 20px 3px 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bkq_4 cite::before {
+    display: none;
+}
+.bkq_4.topcite cite {
+    bottom: auto;
+    top: -14px;
+}
+
+blockquote.bkq_5 {
+    padding: 2rem 0.8rem;
+    text-align: center;
+    border-radius: 82px 30px 82px 30px;
+    border-top: 5px solid #CCCCCC;
+    border-bottom: 5px solid #CCCCCC;
+    border-left: none;
+}
+blockquote.bkq_5 cite {
+    position: relative;
+    bottom: -10px;
+    display: block;
+    font-family: var(--font_prime);
+    text-align: left;
+}
+
+@media(min-width: 1024px) {
+    .bkq_4 {
+        padding: 3rem 2.4rem;
+    }
+    .bkq_4 p {
+        font-size: 1.3rem;
+    }
+    .bkq_4 em {
+        font-size: 1.5rem;
+    }
+    .bkq_4 cite {
+        bottom: -14px;
+        font-size: 1.3rem;
+    }
+    .bkq_4.topcite cite {
+        top: -16px;
+    }
+
+    blockquote.bkq_5 {
+        font-size: 1.6rem;
+        padding: 2.2rem 1.3rem;
+    }
+}
